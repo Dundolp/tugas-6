@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 800px;
+        margin: auto;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: flex;
+      }
+      .kiri {
+        width: 200px;
+        height: 630px;
+        padding: 10px;
+        background-color: rgb(235, 96, 142);
+      }
+      .kanan {
+        width: 600px;
+        height: 630px;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .kanan .header {
+        width: 600px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgb(247, 222, 185);
+      }
+      .kanan .main {
+        display: flex;
+      }
+      .kanan .main .article {
+        width: 400px;
+        height: 430px;
+        padding: 10px;
+        background-color: rgba(243, 237, 237, 0.986);
+      }
+      .kanan .main .aside {
+        width: 200px;
+        height: 430px;
+        padding: 10px;
+        background-color: rgb(62, 197, 231);
+      }
+      .footer {
+        width: 600px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgb(230, 177, 107);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kiri"><h2>Nav</h2></div>
+      <div class="kanan">
+        <div class="header"><h2>Header</h2></div>
+        <div class="main">
+          <div class="article"><h2>Article</h2></div>
+          <div class="aside"><h2>Aside</h2></div>
+        </div>
+        <div class="footer"><h2>Footer</h2></div>
+      </div>
+    </div>
+  </body>
+</html>
